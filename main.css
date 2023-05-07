@@ -1,4 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400;700;800&display=swap');
 
+:root {
+    --off-white: hsl(36, 100%, 99%);
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100vh;
+    padding: 40px 100px;
+}
+
+.icon-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.icon__menu.menu__close {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+}
+
+.backdrop {
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: var(--soft-orange);
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+.hero__content {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        ""
+    ;
+}
+
 
 
